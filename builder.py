@@ -9,7 +9,7 @@ CMD_TO_FUNCTIONS: dict = {
 }
 
 
-def iter_file(file_name: str):
+def iter_file(file_name: str) -> Iterable[str]:
     """Генератор для чтения логов"""
 
     with open(file_name) as file:
